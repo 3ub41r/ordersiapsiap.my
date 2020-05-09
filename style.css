@@ -1,8 +1,9 @@
 body {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #e3f1ff;
+    line-height: 1.75rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     font-family: 'Jost', sans-serif;
-}
+} */
