@@ -1,7 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
     background-color: #e3f1ff;
-    line-height: 1.75rem;
+    /* line-height: 1.75rem; */
 }
 
 .font-weight-bold {
@@ -9,8 +9,12 @@ body {
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Poppins', sans-serif;
+    
+}
+h5, h6 {
+    line-height: 1.75rem;
 }
 
 .base-font {
