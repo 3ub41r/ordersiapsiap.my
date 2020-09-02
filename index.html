@@ -207,6 +207,10 @@
                         </div>
                     </div>
 
+                    <h6 class="text-center text-muted text-uppercase mb-5">Seller Terbaru</h6>
+
+                    <div id="sellers-row" class="row"></div>
+
                     <div class="text-center my-5">
                         <h3 id="harga" class="font-weight-bold">
                             Harga
@@ -326,11 +330,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script>
+        function bindSellers(sellers) {
+            var domStr = '';
+
+            for (var i = 0; i < sellers.length; i++) {
+                domStr += '<div class="col-md-4 col-6 mb-4 text-center">';
+                domStr += '<img src="' + sellers[i].thumbnail_path  + '" alt="Logo" class="img-fluid mb-3 shadow rounded-circle" style="width: 6rem;">';
+                domStr += '<span class="d-block text-truncate text-muted">' + sellers[i].name  + '</span>';
+                domStr += '</div>';
+            }
+
+            $('#sellers-row').append($(domStr));
+        }
+
         $(function () {
             $.get('https://nak.ordersiapsiap.my/public-stats', function(data) {
                 $('#amountSum').text('RM' + data.data.amountSum);
                 $('#ordersCount').text(data.data.ordersCount);
                 $('#activeSellers').text(data.data.activeSellers);
+
+                bindSellers(data.data.latestSellers);
                 console.log(data.amountSum);
             });
         })
