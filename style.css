@@ -1,7 +1,17 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #e3f1ff;
+    background-color: #D9E4EC;
+    color: #385E72;
+    
     /* line-height: 1.75rem; */
+}
+
+.navbar {
+    background-color: #B7CFDC;
+}
+
+.navbar-brand {
+    color: #385E72;
 }
 
 .font-weight-bold {
