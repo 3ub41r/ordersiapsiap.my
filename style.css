@@ -10,8 +10,8 @@ body {
     background-color: #B7CFDC;
 }
 
-.navbar-brand {
-    color: #385E72;
+.navbar-brand, li.nav-item {
+    color: #385E72 !important;
 }
 
 .font-weight-bold {
