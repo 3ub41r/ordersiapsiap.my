@@ -1,9 +1,7 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #D9E4EC;
     color: #385E72;
-    
-    /* line-height: 1.75rem; */
 }
 
 .navbar {
@@ -14,17 +12,13 @@ body {
     color: #385E72 !important;
 }
 
-.font-weight-bold {
-    font-weight: 900!important;
-}
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 h5, h6 {
     line-height: 1.75rem;
 }
 
 .base-font {
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Nunito', sans-serif !important;
 }
