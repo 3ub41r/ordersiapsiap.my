@@ -1,0 +1,8 @@
+#!/bin/sh
+USER=zubair
+HOST=ordersiapsiap.my
+DIR=/var/www/ordersiapsiap.my/
+
+rsync -avz --exclude 'deploy' --exclude '.git' --exclude 'blog' --delete ./ ${USER}@${HOST}:${DIR}
+
+exit 0
