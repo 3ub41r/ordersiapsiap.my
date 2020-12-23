@@ -22,3 +22,7 @@ h5, h6 {
 .base-font {
     font-family: 'Quicksand', sans-serif !important;
 }
+
+#sellers-row img {
+    filter: grayscale(1);
+}
