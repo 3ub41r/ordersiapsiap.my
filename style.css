@@ -26,3 +26,7 @@ h5, h6 {
 #sellers-row img {
     filter: grayscale(1);
 }
+
+#sellers-row img:hover {
+    filter: grayscale(0);
+}
